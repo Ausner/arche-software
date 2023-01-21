@@ -26,9 +26,9 @@ const Header = () => {
                     <GoThreeBars/>
                 </div>
                     <ul className={css.menu} style={{display:ShowMenu ? 'inherit' : 'none'}}>
-                        <li>Services</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 
 
