@@ -33,11 +33,12 @@
 
 .cart2{
     position: absolute;
-    bottom: 25%;
+    bottom: 100%;
     right: 5%;
     display: flex;
     gap: 1rem;
     align-items: center;
+
 }
 
 .cart2>svg{
