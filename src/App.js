@@ -4,10 +4,11 @@ import Hero from "./components/main-portal/main-portal";
 import Slider from "./components/slider/slider";
 import Testimonials from "./components/testimonials/testimonials";
 import Footer from "./components/footer/footer";
-import MissionVission from "./components/mission-vission/mission-vission";
+import MissionVision from "./components/mission-vission/mission-vision";
 import Services from "./components/services/services";
 import Projects from "./components/projects/projects";
 import Contact from "./components/contact/contact";
+import Idea from "./components/idea/idea";
 
 function App() {
   return (
@@ -16,10 +17,11 @@ function App() {
         <Header></Header>
         <Hero></Hero>
         <Slider></Slider>
-        <MissionVission></MissionVission>
-        <Services></Services>
+        <MissionVision></MissionVision>
+        {/* <Services></Services>
         <Projects></Projects>
-        <Contact></Contact>
+        <Contact></Contact> */}
+        <Idea></Idea>
         <Testimonials></Testimonials>
       </span>
 
