@@ -3,7 +3,7 @@ import css from "./header.module.css";
 import Logo from "../../assets/logo.png";
 import {CgShoppingBag} from "react-icons/cg";
 import {GoThreeBars} from "react-icons/go";
-import { Link } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -18,7 +18,9 @@ const Header = () => {
         <div className={css.container}>
             <div className={css.logo}>
                 <img src={Logo} alt=""/>
-                <span>Arche Software</span>
+                <Link to={"/"}>
+                    <span>Arche Software</span>
+                </Link>
             </div>
 
             <div className={css.right}>
@@ -27,9 +29,9 @@ const Header = () => {
                     <GoThreeBars/>
                 </div>
                     <ul className={css.menu} style={{display:ShowMenu ? 'inherit' : 'none'}}>
-                        <li>Services</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
+                            <li> <Link to={"/services"}>Services</Link></li>
+                            <li> <Link to={"/projects"}>Projects</Link></li>
+                            <li> <Link to={"/contact"}>Contact</Link></li>
                     </ul>
                 
 
