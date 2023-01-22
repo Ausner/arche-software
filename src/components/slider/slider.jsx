@@ -44,7 +44,8 @@ export const Slider = () => {
                             </div>
 
                             <span>{slide.price}</span>
-                            <div>Apply</div>
+                            {/* <div>Apply</div> */}
+                            <button>Apply</button>
                         </div>
 
                         <img src={slide.img} alt="product" className="img-p"/>

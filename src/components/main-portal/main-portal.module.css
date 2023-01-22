@@ -22,13 +22,14 @@
 
 
 .blueCircle{
-    width: 30rem;
-    height: 30rem;
-    border-radius: 50%;
-    z-index: -99;
-    position: absolute;
-    bottom: 0;
-    background: linear-gradient(135.74deg, #0bb5ff 14.09%, #6dd3fe 83.81%);
+    width: 30rem !important;
+    height: 30rem !important;
+    border-radius: 50% !important;
+    z-index: 0 !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    background: linear-gradient(135.74deg, #0bb5ff 14.09%, #6dd3fe 83.81%) !important;
+    box-shadow: 0 0 30px 5px #171717 inset;
 }
 
 .cart2{
@@ -44,10 +45,11 @@
 .cart2>svg{
     width: 30px;
     height: 30px;
+    color: black;
     background: white;
     padding: 10px;
     border-radius: 50%;
-    border: 6px solid var(--black);
+    border: 6px solid var(--white);
 }
 
 
@@ -55,6 +57,7 @@
     display: flex;
     gap: 1rem;
     align-items: center;
+    color: black !important;
     background: white;
     padding: 10px;
     font-size: 0.8rem;
@@ -99,7 +102,7 @@
     display: flex;
     flex-direction: column;
     width: min-content;
-    color: black;
+    color: white;
 }
 
 .text2>:first-child{
@@ -133,6 +136,28 @@
     font-weight: 800;
     font-size: 2.5rem;
 }
+
+
+
+
+/*Aqui empieza*/
+
+
+.softwareDevelopment {
+  animation: background 20s linear infinite;
+  background: linear-gradient(90deg, rgb(135, 62, 202) 0%,rgb(113, 61, 148) 10%,rgb(60, 70, 207) 20%,rgba(74,165,168,1) 30%,rgba(89,90,165,1) 40%,rgb(212, 37, 169) 50%,rgb(56, 114, 124) 60%,rgba(82,175,183,1) 70%,rgb(76, 120, 170) 80%,rgb(58, 56, 185) 90%,rgba(199,201,88,1) 100%);
+  background-size: 1000% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes background {
+  0%{background-position:0% 50%}
+  100%{background-position:100% 50%}
+}
+
+
+
 
 @media screen and (max-width: 856px) {
     .text1, .text2>span:nth-of-type((2)){

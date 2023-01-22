@@ -17,7 +17,7 @@ const Hero = () => {
                 <span className={css.text1}>Technology products</span>
 
                 <div className={css.text2}>
-                    <span>Software Development</span>
+                    <span className={css.softwareDevelopment}>Software Development</span>
                     {" "}
                     <span>We build dreams into software</span>
                 </div>
