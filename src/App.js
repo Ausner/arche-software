@@ -32,19 +32,21 @@ function App() {
     })
     .catch(function (error) {
       console.error(error);
-    });
-
-
-    axios.get('https://arche-software-backend.vercel.app/api/reviews', config)
-    .then(function (response) {
-      setReviews(response.data);
-
-    })
-    .catch(function (error) {
-      console.error(error);
     }).finally(() => {
-      setloadData(false);
+        axios.get('https://arche-software-backend.vercel.app/api/reviews', config)
+        .then(function (response) {
+          setReviews(response.data);
+    
+        })
+        .catch(function (error) {
+          console.error(error);
+        }).finally(() => {
+          setloadData(false);
+        });
     });
+
+
+
 
   }, []);
 
@@ -55,11 +57,11 @@ function App() {
           {loadData ? <div class="planet"></div> :
           
           <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/services" element={<Services />} />
-        </Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/services" element={<Services />} />
+          </Routes>
           
           }
 
