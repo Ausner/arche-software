@@ -59,3 +59,101 @@
     text-decoration: none;
     color: inherit
   }
+
+
+
+  .planet {
+    margin-left: 45%; 
+    margin-top: 20%;   
+    display: block;
+    width: 125px;
+    height: 125px;
+    position: relative;
+    transform-style: preserve-3d;
+    border-radius: 50%;
+    background: #fcc96b;
+    background: #fcc96b;
+    background: linear-gradient(
+      180deg,
+      #6bfce4 0%,
+      #6bbbfc 15%,
+      #0188f7 15%,
+      #0188f7 19%,
+      #6bcefc 19%,
+      #6bbbfc 22%,
+      #01bef7 22%,
+      #0163f7 28%,
+      #6bc7fc 28%,
+      #6bc2fc 31%,
+      #6bc7fc 33%,
+      #6b86fc 36%,
+      #0105f7 36%,
+      #014ff7 48%,
+      #6bb6fc 48%,
+      #6b8dfc 55%,
+      #0180f7 55%,
+      #0111f7 66%,
+      #6b8dfc 66%,
+      #6b99fc 70%,
+      #0163f7 70%,
+      #0188f7 73%,
+      #6bb6fc 73%,
+      #6ba5fc 82%,
+      #0163f7 82%,
+      #9dafc7 86%,
+      #6ba5fc 86%
+    );
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.25),
+      inset 8px -4px 6px rgba(13, 0, 199, 0.5),
+      inset -8px 4px 8px rgba(203, 199, 255, 0.5), inset 20px -5px 12px #0180f7,
+      0 0 100px #ffffff59;
+    transform: rotateZ(-15deg);
+  }
+  
+  .planet::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 16px solid #19c3e1;
+    border-top-width: 0;
+    border-radius: 50%;
+    box-shadow: 0 -2px 0 #2079c1;
+    animation: rings1 0.8s infinite linear;
+  }
+  
+  .planet::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 8px solid #0c8bd4;
+    border-top-width: 0;
+    border-radius: 50%;
+    box-shadow: 0 -2px 0 #09adb9;
+    animation: rings2 0.8s infinite linear;
+  }
+  
+  @keyframes rings1 {
+    0% {
+      transform: rotateX(65deg) rotateZ(0deg) scale(1.75);
+    }
+  
+    100% {
+      transform: rotateX(65deg) rotateZ(360deg) scale(1.75);
+    }
+  }
+  
+  @keyframes rings2 {
+    0% {
+      transform: rotateX(65deg) rotateZ(0deg) scale(1.7);
+    }
+  
+    100% {
+      transform: rotateX(65deg) rotateZ(360deg) scale(1.7);
+    }
+  }
