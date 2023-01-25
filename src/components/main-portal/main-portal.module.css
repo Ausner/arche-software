@@ -203,17 +203,17 @@
 
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
     .blueCircle{
-        top: 0;
-        width: 16rem;
-        height: 72%;
+        top: -15 !important;
+        width: 10rem !important;
+        height: 10rem !important; 
     }
 
     .wrapper>img{
-        top: 3rem;
-        width: 12rem;
-        height: 15rem;
+        top: -3rem;
+        width: 8rem;
+        height: 10rem;
     }
 
     .cart2{

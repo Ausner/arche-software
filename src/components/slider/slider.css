@@ -76,7 +76,8 @@
 
 @media screen and (max-width: 856px) {
     .s-container .swiper{
-        width: 90%;
+        margin-top: 5rem !important;
+        width: 60%;
         height: 10rem;
     }
 
@@ -173,3 +174,4 @@ button {
     transition: box-shadow 0.2s ease-in;
   }
   
+

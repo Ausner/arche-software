@@ -5,3 +5,21 @@
     text-align: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 800px) {
+    .container{
+      width: 4rem !important;
+      display: flex !important;
+      flex-direction: column !important;
+      margin-left: -10% !important;
+      gap: 50px !important;
+    }
+    .mission{
+        width: 250% !important;
+    }
+
+    .vision{
+        width: 250% !important;
+    }
+
+  } 
