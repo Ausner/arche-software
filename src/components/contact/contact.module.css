@@ -4,4 +4,38 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin-bottom: 170px;
+}
+
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 30%;
+}
+
+
+.formContainer>input{
+    border-radius: 10px;
+    height: 40px;
+    color: white;
+    background-color: #171717;
+}
+
+.formContainer>textarea{
+    border-radius: 10px;
+    height: 100px;
+    color: white;
+    background-color: #171717;
+}
+
+@media screen and (max-width: 800px) {
+    .formContainer{
+        margin-top: 10% !important;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 60%;
+    }
 }

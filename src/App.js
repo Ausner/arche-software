@@ -54,7 +54,7 @@ function App() {
 
   return (
     <div className="App">
-          {loadData ? <div class="planet"></div> :
+          {loadData ? <div className="planet"></div> :
           
           <Routes>
             <Route path="/" element={<Home />} />
