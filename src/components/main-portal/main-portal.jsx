@@ -1,6 +1,7 @@
 import React from "react";
 import css from "./main-portal.module.css";
 import HeroImg from "../../assets/main.png";
+import ArcheLogo from "../../assets/ArcheLogo.png";
 import {RiShoppingBagFill} from "react-icons/ri";
 import {BsArrowRight} from "react-icons/bs";
 import {motion} from "framer-motion";

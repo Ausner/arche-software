@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import css from "./header.module.css";
 import Logo from "../../assets/logo.png";
+import ArcheLogo from "../../assets/ArcheLogo.png";
 import {CgShoppingBag} from "react-icons/cg";
 import {GoThreeBars} from "react-icons/go";
 import { Link } from "react-router-dom";
@@ -17,7 +18,7 @@ const Header = () => {
     return (
         <div className={css.container}>
             <div className={css.logo}>
-                <img src={Logo} alt=""/>
+                <img src={ArcheLogo} alt=""/>
                 <Link to={"/"}>
                     <span>Arche Software</span>
                 </Link>

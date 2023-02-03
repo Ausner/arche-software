@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from "../../assets/logo.png";
+import ArcheLogo from '../../assets/ArcheLogo.png'
 import {
     InboxIcon,
     PhoneIcon,
@@ -20,7 +21,7 @@ export default function Footer() {
         <hr/>
         <div className={css.cFooter}>
             <div className={css.logo}>
-                <img src={Logo} alt=""/>
+                <img src={ArcheLogo} alt=""/>
                 <span>Arche Software</span>
             </div>
         
