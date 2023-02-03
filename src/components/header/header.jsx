@@ -31,7 +31,7 @@ const Header = () => {
                 </div>
                     <ul className={css.menu} style={{display:ShowMenu ? 'inherit' : 'none'}}>
                             <li> <Link to={"/services"}>Services</Link></li>
-                            <li> <Link to={"/projects"}>Projects</Link></li>
+                            <li> <Link to={"/products"}>Products</Link></li>
                             <li> <Link to={"/contact"}>Contact</Link></li>
                     </ul>
                 

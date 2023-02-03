@@ -1,6 +1,6 @@
 import "./App.css";
 import Services from "./components/services/services";
-import Projects from "./components/projects/projects";
+import Products from "./components/products/products";
 import Contact from "./components/contact/contact";
 import Home from "./components/home/home";
 import { Routes, Route } from "react-router-dom";
@@ -59,7 +59,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/products" element={<Products />} />
             <Route path="/services" element={<Services />} />
           </Routes>
           

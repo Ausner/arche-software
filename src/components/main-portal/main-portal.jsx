@@ -5,6 +5,7 @@ import ArcheLogo from "../../assets/ArcheLogo.png";
 import {RiShoppingBagFill} from "react-icons/ri";
 import {BsArrowRight} from "react-icons/bs";
 import {motion} from "framer-motion";
+import { Link } from "react-router-dom";
 
 
 const Hero = () => {
@@ -51,9 +52,12 @@ const Hero = () => {
                     <div className={css.signup}>
                         <span>Let's work together!</span>
 
-                        <div>
-                            <BsArrowRight/>
-                        </div>
+                        <Link to={"/contact"}>
+                            <div>
+                                <BsArrowRight/>
+                            </div>
+                        </Link>
+                        
                     </div>
                 </motion.div>
             </div>
