@@ -6,33 +6,34 @@ import CustomSystems from '../assets/customsystems.png';
 import MobileApps from '../assets/mobile.png';
 import Databases from '../assets/databases.png'
 
+
 export const ProjectsData = [
     {
-        name: "Delivery App",
-        img: Ecommerce
-    },
-    {
-        name: "Web Chat",
-        img: Chat
-    },
-    {
-        name: "Car Rental",
-        img: CarRental
-    },
-    {
-        name: "Web Sites",
+        name: "web-sites",
         img: Website
     },
     {
-        name: "Custom Systems",
-        img: CustomSystems
-    },
-    {
-        name: "Mobile Apps",
+        name: "mobile-apps",
         img: MobileApps
     },
     {
-        name: "Databases",
+        name: "custom-systems",
+        img: CustomSystems
+    },
+    {
+        name: "web-chat",
+        img: Chat
+    },
+    {
+        name: "car-rental",
+        img: CarRental
+    },
+    {
+        name: "delivery-app",
+        img: Ecommerce
+    },
+    {
+        name: "databases",
         img: Databases
     }
 ];

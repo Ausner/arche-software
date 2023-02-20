@@ -1,7 +1,7 @@
 :root{
   --white: #343434;
-  --white: white;
-  --bg: #171717;
+  /* --white: white; */
+  --bg: white;
   /* --bg: radial-gradient(circle, #5c0067 0%, #00d4ff 40%); */
   /* --bg:  linear-gradient(179.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%); */
 
@@ -30,7 +30,8 @@
 
 .gradient{
   padding-bottom: 20px;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #171717, #171717);
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #171717, #171717); */
+  background-color: white;
   box-shadow: 0 0 16px 0px #171717 inset;
   animation: gradient 5s ease infinite;
 }

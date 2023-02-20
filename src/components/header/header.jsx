@@ -5,13 +5,35 @@ import ArcheLogo from "../../assets/ArcheLogo.png";
 import {CgShoppingBag} from "react-icons/cg";
 import {GoThreeBars} from "react-icons/go";
 import { Link } from "react-router-dom";
+import {useTranslation} from 'react-i18next';
+import { useEffect } from "react";
+
 
 const Header = () => {
 
+    const [t, i18n] = useTranslation("global");
+    const [language, setLanguage] = useState("es");
     const [ShowMenu, setShowMenu] = useState(true);
 
     const toggleMenu = () => {
         setShowMenu(ShowMenu => !ShowMenu);
+    }
+
+    useEffect(() => {
+        setLanguage(i18n.language);
+    }, [i18n])
+
+    const changeLang = () => {
+        console.log('i18n.language: ', i18n.language)
+        if (i18n.language === 'es') {
+            setLanguage('en');
+            i18n.changeLanguage('en')
+
+        } else {
+            setLanguage('es');
+            i18n.changeLanguage('es')
+
+        }
     }
 
 
@@ -30,15 +52,11 @@ const Header = () => {
                     <GoThreeBars/>
                 </div>
                     <ul className={css.menu} style={{display:ShowMenu ? 'inherit' : 'none'}}>
-                            <li> <Link to={"/services"}>Services</Link></li>
-                            <li> <Link to={"/products"}>Products</Link></li>
-                            <li> <Link to={"/contact"}>Contact</Link></li>
+                            <li> <Link to={"/products"}>{t("header.products-link")}</Link></li>
+                            <li> <Link to={"/contact"}>{t("header.contact-link")}</Link></li>
+                            <li onClick={changeLang}>{language.toUpperCase()}</li>
                     </ul>
                 
-
-                <input type="text" className={css.search} placeholder="Search"/>
-
-                <CgShoppingBag className={css.cart} />
             </div>
         </div>
     )

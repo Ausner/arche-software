@@ -1,5 +1,4 @@
 import "./App.css";
-import Services from "./components/services/services";
 import Products from "./components/products/products";
 import Contact from "./components/contact/contact";
 import Home from "./components/home/home";
@@ -9,6 +8,12 @@ import axios from 'axios';
 import {setProducts} from "./data/products";
 import {setReviews} from "./data/testimonials";
 
+export let language = 'Es';
+
+export const setLanguage = (_language) => {
+    language = _language;
+    console.log('new: ', language)
+}
 
 
 
@@ -51,16 +56,18 @@ function App() {
   }, []);
 
 
+  
+
+
 
   return (
     <div className="App">
           {loadData ? <div className="planet"></div> :
           
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home lang={language}/>} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/products" element={<Products />} />
-            <Route path="/services" element={<Services />} />
           </Routes>
           
           }

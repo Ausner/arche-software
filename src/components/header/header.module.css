@@ -39,7 +39,7 @@
 }
 
 .menu>li:hover{
-    color: #ffffff;
+    color: #075ddf;
     cursor: pointer;
     font-weight: bold;
 }
@@ -101,7 +101,7 @@
         right: 2rem;
         z-index: 9999;
         background: rgb(0, 0, 0);
-        color: var(--white);
+        color: white;
         border-radius: 5px;
         flex-direction: column;
         padding: 1rem;

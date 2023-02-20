@@ -49,6 +49,7 @@
   .buttonSubmit:hover {
     background-color: #fff;
     color: #171717;
+    border: 1px solid black;
   }
   
   .input:focus, .input:focus-visible {

@@ -6,9 +6,11 @@ import WIP from "../../assets/WIP.png";
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {useTranslation} from 'react-i18next';
 
 
 const Contact = () => {
+    const [t, i18n] = useTranslation("global");
 
     const notify = () => toast.success("Email sent!");
     const [FormData, setFormData] = useState({name:'', email:'', phone:'', message:''})
@@ -42,23 +44,19 @@ const Contact = () => {
             <div className="gradient">
                 <Header />
                 <div className={css.container}>
-                    {/* <h1>Contact component goes here!</h1>
-                    <img src={WIP} width={300} height={300}/> */}
-
-
                     <form action="" onSubmit={handleSend} className={css.formContainer}>
-                        <span>Please fill the following form</span>
-                        <input onChange={handleInput} type="text" name="name" value={FormData.name} required placeholder="     Name"/>
-                        <input onChange={handleInput} type="email" name="email" value={FormData.email} required placeholder="     Email"/>
-                        <input onChange={handleInput} type="text" name="phone" value={FormData.phone} required placeholder="     Phone Number"/>
-                        <textarea onChange={handleInput} name="message" rows={3} value={FormData.message} required placeholder="   Message"></textarea>
-                        <button  className="btn" type="submit">
-                            Send
+                        <span>{t("contact.subtitle-1")}</span>
+                        <input onChange={handleInput} type="text" name="name" value={FormData.name} required placeholder={"     " + t("contact.name")}/>
+                        <input onChange={handleInput} type="email" name="email" value={FormData.email} required placeholder={"     " + t("contact.email")}/>
+                        <input onChange={handleInput} type="text" name="phone" value={FormData.phone} required placeholder={"     " + t("contact.phone")}/>
+                        <textarea onChange={handleInput} name="message" rows={3} value={FormData.message} required placeholder={"   " + t("contact.message")}></textarea>
+                        <button  className={css.btn} type="submit">
+                            {t("contact.button-text")}
                         </button>
                         <ToastContainer />
                     </form>
 
-                    <p>We will contact you as soon as possible!</p>
+                    <p>{t("contact.subtitle-2")}</p>
 
                 </div>
             </div>

@@ -1,16 +1,21 @@
 import css from "./mission-vision.module.css";
+import {useTranslation} from 'react-i18next';
+import { useState, useEffect } from "react";
 
-const MissionVision = () => {
+const MissionVision = ({lang}) => {
+
+    const [t, i18n] = useTranslation("global");
+
     return(
         <div className={css.container}>
             <div className={css.mission}>
-                <h2>Mission</h2>
-                <span>"At Arche Software, our mission is to Help the clients by building awesome software products. We believe that by building great software products, we can help make the world a better place for everyone"</span>
-            </div>
-            <div className={css.vision}>
-                <h2>Vision</h2>
-                <span>"Arche Software is a smart, efficient, fast, extraordinary, awesome, and quality software development company that builds software to help humanity and auto task"</span>
-            </div>
+                    <h2>{t("mission-and-vision.mission-title")}</h2>
+                    <span>{t("mission-and-vision.mission-desc")}</span>
+                </div>
+                <div className={css.vision}>
+                    <h2>{t("mission-and-vision.vision-title")}</h2>
+                    <span>{t("mission-and-vision.vision-desc")}</span>
+                </div>
         </div>
     )
 

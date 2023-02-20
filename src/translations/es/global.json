@@ -1,0 +1,42 @@
+{
+    "header": {
+        "contact-link": "Contacto",
+        "products-link": "Productos"
+    },
+    "main-portal": {
+        "title-1": "Productos Tecnológicos",
+        "title-2": "Desarrollo de Software",
+        "subtitle": "Convertimos sueños en software",
+        "label": "¡Trabajemos juntos!"
+    },
+    "mission-and-vision": {
+        "vision-title": "Visión",
+        "mission-title": "Misión",
+        "mission-desc": "En Arche Software, nuestra misión es ayudar a los clientes mediante la creación de productos de software increíbles. Creemos que mediante la creación de excelentes productos de software, podemos ayudar a que el mundo sea un lugar mejor para todos.",
+        "vision-desc": "Arche Software es una empresa de desarrollo de software inteligente, eficiente, rápida, extraordinaria, asombrosa y de calidad que crea software para ayudar a la humanidad y a las tareas automáticas."
+    },
+    "idea": {
+        "title": "¿Tienes una grandiosa idea para tu negocio?",
+        "subtitle": "Vamos a contruirla!",
+        "button-text": "Contáctame"
+    },
+    "contact": {
+        "subtitle-1": "Completa el siguiente formulario",
+        "subtitle-2": "¡Nos contactaremos contigo lo más antes posible!",
+        "name": "Nombre",
+        "email": "Correo",
+        "phone": "Número de Teléfono",
+        "message": "Mensaje",
+        "button-text": "ENVIAR"
+    },
+    "products": {
+        "title": "Nuestros productos más requeridos",
+        "web-sites": "Páginas Web",
+        "mobile-apps": "Apps Móviles",
+        "custom-systems": "Sistemas Personalizados",
+        "web-chat": "Chat Web",
+        "car-rental": "Reta de Carros",
+        "delivery-app": "App Entregas y Pedidos",
+        "databases": "Bases de Datos"
+    }
+}

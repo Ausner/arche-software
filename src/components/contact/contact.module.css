@@ -20,14 +20,32 @@
     border-radius: 10px;
     height: 40px;
     color: white;
-    background-color: #171717;
+    background-color: #075ddf;
+    font-weight: bold;
+}
+
+.formContainer>input::placeholder{
+    color: white;
+    font-weight: bold;
+}
+
+.btn{
+    background-color: white;
+    color: #171717;
+    border: 1px solid black;
+
 }
 
 .formContainer>textarea{
     border-radius: 10px;
     height: 100px;
     color: white;
-    background-color: #171717;
+    background-color: #075ddf;
+}
+
+.formContainer>textarea::placeholder{
+    color: white;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 800px) {

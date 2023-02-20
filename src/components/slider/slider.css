@@ -10,7 +10,7 @@
 
 .s-container .swiper-slide{
     color: white;
-    background-color: #171717;
+    background-color: #075ddf;
     display: flex;
     border-radius: 10px;
     padding: 1rem;
@@ -28,7 +28,7 @@
 }
 
 .s-container .swiper-button-prev, .s-container .swiper-button-next{
-    color: white;
+    color: black;
 }
 
 .left-s{
@@ -66,12 +66,11 @@
 
 
 .img-p{
-    transform: rotate(-20deg);
     position: absolute;
     right: 0;
-    width: 40%;
-    height: 100%;
-    bottom: -20%;
+    width: 10%;
+    height: 20%;
+    right: 5px;
 }
 
 @media screen and (max-width: 856px) {
@@ -108,7 +107,7 @@ button {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 2px;
-    background: transparent;
+    background: #171717;
     color: #fff;
     overflow: hidden;
     box-shadow: 0 0 0 0 transparent;

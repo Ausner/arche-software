@@ -6,22 +6,24 @@ import {RiShoppingBagFill} from "react-icons/ri";
 import {BsArrowRight} from "react-icons/bs";
 import {motion} from "framer-motion";
 import { Link } from "react-router-dom";
+import {useTranslation} from 'react-i18next';
 
 
 const Hero = () => {
 
     const transition = {duration: 3, type: "spring"};
+    const [t, i18n] = useTranslation("global");
 
     return (
         <div className={css.container}>
             {/* Left side */}
             <div className={css.h_sides}>
-                <span className={css.text1}>Technology products</span>
+                <span className={css.text1}>{t("main-portal.title-1")}</span>
 
                 <div className={css.text2}>
-                    <span className={css.softwareDevelopment}>Software Development</span>
+                    <span className={css.softwareDevelopment}>{t("main-portal.title-2")}</span>
                     {" "}
-                    <span>We build dreams into software</span>
+                    <span style={{color: "black", fontWeight: "bold"}}>{t("main-portal.subtitle")}</span>
                 </div>
             </div>
 
@@ -50,7 +52,7 @@ const Hero = () => {
 
 
                     <div className={css.signup}>
-                        <span>Let's work together!</span>
+                        <span>{t("main-portal.label")}</span>
 
                         <Link to={"/contact"}>
                             <div>
@@ -64,7 +66,7 @@ const Hero = () => {
 
 
             {/* Right Side */}
-            <div className={css.h_sides}>
+            {/* <div className={css.h_sides}>
                 <div className={css.traffic}>
                     <span>1.5m</span>
                     <span>Monthly Traffic</span>
@@ -74,7 +76,7 @@ const Hero = () => {
                     <span>1.5m</span>
                     <span>Happy Customers</span>
                 </div>
-            </div>
+            </div> */}
 
         </div>
     )

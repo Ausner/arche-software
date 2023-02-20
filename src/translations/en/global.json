@@ -1,0 +1,42 @@
+{
+    "header": {
+        "contact-link": "Contact",
+        "products-link": "Products"
+    },
+    "main-portal": {
+        "title-1": "Technology products",
+        "title-2": "Software Development",
+        "subtitle": "We build dreams into software",
+        "label": "Let's work together!"
+    },
+    "mission-and-vision": {
+        "vision-title": "Vision",
+        "mission-title": "Mission",
+        "mission-desc": "At Arche Software, our mission is to Help the clients by building awesome software products. We believe that by building great software products, we can help make the world a better place for everyone",
+        "vision-desc": "Arche Software is a smart, efficient, fast, extraordinary, awesome, and quality software development company that builds software to help humanity and auto task"
+    },
+    "idea": {
+        "title": "Do you have a great idea for your business?",
+        "subtitle": "Let's build it!",
+        "button-text": "Contact me"
+    },
+    "contact": {
+        "subtitle-1": "Please fill the following form",
+        "subtitle-2": "We will contact you as soon as possible!",
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone Number",
+        "message": "Message",
+        "button-text": "SEND"
+    },
+    "products": {
+        "title": "Our Most Requested Products",
+        "web-sites": "Web Sites",
+        "mobile-apps": "Mobile Apps",
+        "custom-systems": "Custom Systems",
+        "web-chat": "Web Chat",
+        "car-rental": "Car-Rental",
+        "delivery-app": "Delivery App",
+        "databases": "Databases"
+    }
+}
