@@ -41,7 +41,7 @@ const Idea = () => {
             <span>{t("idea.subtitle")}</span>
 
             <form action="" onSubmit={handleSend}>
-                <input required type="email" className={css.input} id="email" name="email" value={FormData.email} placeholder="example@test.com" autocomplete="off" onChange={handleInput}/>
+                <input required type="email" className={css.input} id="email" name="email" value={FormData.email} placeholder={t("idea.placeholder")} autocomplete="off" onChange={handleInput}/>
                 <input className={css.buttonSubmit} value={t("idea.button-text")} type="submit"/>
                 <ToastContainer />
             </form>

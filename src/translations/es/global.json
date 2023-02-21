@@ -19,7 +19,8 @@
     "idea": {
         "title": "¿Tienes una grandiosa idea para tu negocio?",
         "subtitle": "Vamos a contruirla!",
-        "button-text": "Contáctame"
+        "button-text": "Contáctame",
+        "placeholder": "ejemplo@prueba.com"
     },
     "contact": {
         "subtitle-1": "Completa el siguiente formulario",

@@ -25,6 +25,7 @@ export const Slider = () => {
 
     const handleModal = (data) => {
         setDataModal(data);
+        console.log("modal ", dataModal)
         setOpened(true);
     }
 

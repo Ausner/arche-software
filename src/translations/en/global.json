@@ -19,7 +19,8 @@
     "idea": {
         "title": "Do you have a great idea for your business?",
         "subtitle": "Let's build it!",
-        "button-text": "Contact me"
+        "button-text": "Contact me",
+        "placeholder": "example@test.com"
     },
     "contact": {
         "subtitle-1": "Please fill the following form",

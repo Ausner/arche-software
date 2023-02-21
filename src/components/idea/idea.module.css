@@ -22,12 +22,15 @@
     min-height: 50px;
     max-width: 450px;
     padding: 0 1rem;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 15px;
     border: 1px solid black;
     border-radius: 6px 0 0 6px;
-    background-color: transparent;
-    color:#ffffff
+  }
+
+  .input:focus{
+    border: 1px solid black;
+    border-radius: 6px 0 0 6px;
   }
 
   .input::placeholder{
@@ -53,7 +56,7 @@
   }
   
   .input:focus, .input:focus-visible {
-    border-color: #ffffff;
+    border-color: #000000;
     outline: none;
   }
   
