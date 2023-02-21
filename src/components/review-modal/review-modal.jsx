@@ -37,7 +37,7 @@ export default function ReviewModal({ opened, setOpened }) {
                     <label>{t("review.username")}</label>
                     <input required type="text" class="input" placeholder={t("review.username-placeholder")}></input>
                     <label>{t("review.email")}</label>
-                    <input required type="text" class="input" placeholder={t("review.email-placeholder")}></input>
+                    <input required type="email" class="input" placeholder={t("review.email-placeholder")}></input>
                     <label>{t("review.message")}</label>
                     <textarea required maxLength={100} style={{maxHeight:"60px", maxWidth: "100%", minWidth: "60px", minWidth: "100%"}}></textarea>
                     <button>{t("review.button-text")}</button>

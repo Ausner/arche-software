@@ -35,7 +35,7 @@ export default function OfferModal({ opened, setOpened, data }) {
                     <span className="card__title">{t("offer.title")}</span>
                     <p className="card__content">{t("offer.description")}</p>
                     <div className="card__form">
-                        <input placeholder={t("offer.placeholder")} type="text"></input>
+                        <input placeholder={t("offer.placeholder")} type="email" required></input>
                         <button className="sign-up">{t("offer.button-text")}</button>
                     </div>
             </form>
