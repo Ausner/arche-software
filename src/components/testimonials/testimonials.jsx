@@ -1,13 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import css from "./testimonials.module.css";
 import Hero from "../../assets/hero1.png";
 import { TestimonialsData } from "../../data/testimonials";
 import {useTranslation} from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import ReviewModal from '../review-modal/review-modal';
 
 export default function Testimonials() {
     const [t, i18n] = useTranslation("global");
-
+    const [opened, setOpened] = useState(false);
+    const [dataModal, setDataModal] = useState({});
 
   return (
     <div className={css.testimonials}>
@@ -56,6 +58,8 @@ export default function Testimonials() {
                 ))}
             </Swiper>
         </div>
+        <button className='btn' onClick={() => setOpened(true)}> {t("testimonials.button-text")} </button>
+        <ReviewModal style={{marginTop: '10px'}} opened={opened} setOpened = {setOpened}/>
     </div>
   )
 }

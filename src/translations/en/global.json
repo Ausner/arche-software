@@ -53,13 +53,23 @@
         "title": "TOP RATED",
         "subtitle-1": "WE ARE EVALUTED BY OUR CUSTOMERS",
         "subtitle-2": "HAPPY CUSTOMERS WITH US",
-        "reviews": "Reviews"
+        "reviews": "Reviews",
+        "button-text": "ADD REVIEW"
     },
     "footer": {
         "contact-us": "Contact US",
         "location": "Location",
         "rigths-reserved": "All rigths reserved.",
         "by": "by"
+    },
+    "review": {
+        "title": "New Review",
+        "username": "Username",
+        "username-placeholder": "Enter your username",
+        "email": "Email",
+        "email-placeholder": "Enter your email",
+        "message": "Message",
+        "button-text": "SEND"
     }
 
 }

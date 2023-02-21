@@ -53,12 +53,22 @@
         "title": "ALTAMENTE CALIFICADOS",
         "subtitle-1": "SOMOS EVALUADOS POR NUESTROS CLIENTES",
         "subtitle-2": "CLIENTES FELICES CON NOSOTROS",
-        "reviews": "Reseñas"
+        "reviews": "Reseñas",
+        "button-text": "AGREGAR RESEÑA"
     },
     "footer": {
         "contact-us": "Contáctanos",
         "location": "Locación",
         "rigths-reserved": "Todos los derechos reservados.",
         "by": "por"
+    },
+    "review": {
+        "title": "Nueva Reseña",
+        "username": "Usuario",
+        "username-placeholder": "Ingresa tu nombre de usuario",
+        "email": "Correo",
+        "email-placeholder": "Ingresa tu correo",
+        "message": "Mensaje",
+        "button-text": "ENVIAR"
     }
 }
