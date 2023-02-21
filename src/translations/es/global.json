@@ -43,7 +43,7 @@
     },
     "offer": {
         "title": "Obtener Oferta",
-        "description": "Dejanos saber tu email. Te enviaremos el códodigo de descuento",
+        "description": "Dejanos saber tu email. Te enviaremos el código de descuento",
         "placeholder": "Tu Correo",
         "button-text": "ENVIAR"
     },
