@@ -5,12 +5,6 @@ import { ProjectsData } from "../../data/projects";
 import { useTranslation } from 'react-i18next';
 import Contact from "../contact/contact";
 import { Link } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper";
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
 
 const Products = () => {
     const [t, i18n] = useTranslation("global");
