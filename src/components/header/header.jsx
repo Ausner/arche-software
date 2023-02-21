@@ -52,6 +52,7 @@ const Header = () => {
                     <GoThreeBars/>
                 </div>
                     <ul className={css.menu} style={{display:ShowMenu ? 'inherit' : ''}}>
+                            <li> <Link to={"/"}>{t("header.home-link")}</Link></li>
                             <li> <Link to={"/products"}>{t("header.products-link")}</Link></li>
                             <li> <Link to={"/contact"}>{t("header.contact-link")}</Link></li>
                             <li onClick={changeLang}>{language.toUpperCase()}</li>
