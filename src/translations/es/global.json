@@ -48,7 +48,12 @@
         "button-text": "ENVIAR"
     },
     "slider": {
-        "button-text": "Aplicar"
+        "button-text": "Aplicar",
+        "web-apps": "Apps Web",
+        "desktop-apps": "Apps Escritorio",
+        "scripts": "Códigos",
+        "10-off": "10% Oferta",
+        "15-off": "15% Oferta"
     },
     "testimonials": {
         "title": "ALTAMENTE CALIFICADOS",

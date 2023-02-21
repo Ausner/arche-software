@@ -48,7 +48,12 @@
         "button-text": "SEND"
     },
     "slider": {
-        "button-text": "Apply"
+        "button-text": "Apply",
+        "web-apps": "Web Apps",
+        "desktop-apps": "Desktop Apps",
+        "scripts": "Scripts",
+        "10-off": "10% Off",
+        "15-off": "15% Off"
     },
     "testimonials": {
         "title": "TOP RATED",

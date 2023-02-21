@@ -29,6 +29,24 @@ export const Slider = () => {
         setOpened(true);
     }
 
+    const returnName = (e) => {
+        if (e === "Web Apps") {
+            return t("slider.web-apps");
+        } else if (e === "Desktop Apps") {
+            return t("slider.desktop-apps");
+        } else if (e === "Scripts") {
+            return t("slider.scripts");
+        }
+    }
+
+    const returnPrice = (e) => {
+        if (e === "10% Off") {
+            return t("slider.10-off");
+        } else if (e === "15% Off") {
+            return t("slider.15-off");
+        } 
+    }
+
 
     return (
         <div className="s-container">
@@ -49,13 +67,13 @@ export const Slider = () => {
                         <div className="left-s">
                             <div className="name">
                                 <span>
-                                    {slide.name}
+                                    {returnName(slide.name)}
                                     <br/>
-                                    {slide.detail}
+
                                 </span>
                             </div>
 
-                            <span>{slide.price}</span>
+                            <span>{returnPrice(slide.price)}</span>
                             <button onClick={() => handleModal(slide)}>{t("slider.button-text")}</button>
                         </div>
 
