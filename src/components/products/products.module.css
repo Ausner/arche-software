@@ -1,69 +1,65 @@
 .container{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8rem;
-    margin-top: 5rem;
+  text-align: center;
+  margin-bottom: 8rem;
+  margin-top: 5rem;
+  padding-bottom: 15px;
+  align-items: center;
 }
 
-  .cards{
-    display: flex;
-    gap: 3rem;
-  }
+.cards{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  overflow: scroll;
+  align-self: center;
+}
 
 
-  .card {
-    width: 190px;
-    height: 254px;
-    backdrop-filter: blur(7px);
-    background-color: rgb(255, 255, 255);
-    border-radius: 26px;
-    box-shadow: 35px 35px 68px 0px rgba(157, 177, 255, 0.2), inset -8px -8px 16px 0px rgba(157, 177, 255, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
-    transition: all 0.3s;
-    cursor: pointer;
-    color: black;
+.card {
+  width: 190px;
+  height: 254px;
+  backdrop-filter: blur(7px);
+  background-color: rgb(255, 255, 255);
+  border-radius: 26px;
+  box-shadow: 35px 35px 68px 0px rgba(157, 177, 255, 0.2), inset -8px -8px 16px 0px rgba(157, 177, 255, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+  transition: all 0.3s;
+  cursor: pointer;
+  color: black;
+}
+
+.card:hover {
+  box-shadow: 35px 35px 68px 0px rgba(157, 177, 255, 0.5);
+  transform: scale(1.1);
+}
+
+.card:active {
+  transform: scale(0.95);
+  border: 1px solid blue;
+  animation: 0.3s click cubic-bezier(.42,0,.58,1);
+}
+
+@keyframes click{
+  from{
+    transform: scale(1);
   }
-  
-  .card:hover {
-    box-shadow: 35px 35px 68px 0px rgba(157, 177, 255, 0.5);
-    transform: scale(1.2);
-  }
-  
-  .card:active {
+  50%{
     transform: scale(0.95);
-    border: 1px solid blue;
-    animation: 0.3s click cubic-bezier(.42,0,.58,1);
   }
-  
-  @keyframes click{
-    from{
-      transform: scale(1);
-    }
-    50%{
-      transform: scale(0.95);
-    }
-    to{
-      transform: scale(1);
-    }
+  to{
+    transform: scale(1);
   }
+}
 
 
-  @media screen and (max-width: 1200px) {
-    .cards{
-      /* width: 50%; */
-      display: flex;
-      flex-direction: column;
-
-    }
+@media screen and (max-width: 1200px) {
+  .cards{
+    width: 80%;
   }
+}
 
-  @media screen and (max-width: 800px) {
-    .cards{
-      /* width: 50%; */
-      display: flex;
-      flex-direction: column;
+@media screen and (max-width: 500px) {
+  .cards{
+    width: 50%;
 
-    }
+  }
 }

@@ -30,7 +30,7 @@
         "button-text": "ENVIAR"
     },
     "products": {
-        "title": "Nuestros productos más requeridos",
+        "title": "Productos más vendidos",
         "web-sites": "Páginas Web",
         "mobile-apps": "Apps Móviles",
         "custom-systems": "Sistemas Personalizados",
@@ -38,5 +38,24 @@
         "car-rental": "Reta de Carros",
         "delivery-app": "App Entregas y Pedidos",
         "databases": "Bases de Datos"
+    },
+    "offer": {
+        "title": "Obtener Oferta",
+        "description": "Dejanos saber tu email. Te enviaremos el códodigo de descuento",
+        "placeholder": "Tu Correo",
+        "button-text": "ENVIAR"
+    },
+    "slider": {
+        "button-text": "Aplicar"
+    },
+    "testimonials": {
+        "title": "ALTAMENTE CALIFICADOS",
+        "subtitle-1": "SOMOS EVALUADOS POR NUESTROS CLIENTES",
+        "subtitle-2": "CLIENTES FELICES CON NOSOTROS",
+        "reviews": "Reseñas"
+    },
+    "footer": {
+        "contact-us": "Contáctanos",
+        "location": "Locación"
     }
 }

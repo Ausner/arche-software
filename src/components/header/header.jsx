@@ -13,7 +13,7 @@ const Header = () => {
 
     const [t, i18n] = useTranslation("global");
     const [language, setLanguage] = useState("es");
-    const [ShowMenu, setShowMenu] = useState(true);
+    const [ShowMenu, setShowMenu] = useState(false);
 
     const toggleMenu = () => {
         setShowMenu(ShowMenu => !ShowMenu);
@@ -51,7 +51,7 @@ const Header = () => {
                 <div className={css.bars} onClick={toggleMenu}>
                     <GoThreeBars/>
                 </div>
-                    <ul className={css.menu} style={{display:ShowMenu ? 'inherit' : 'none'}}>
+                    <ul className={css.menu} style={{display:ShowMenu ? 'inherit' : ''}}>
                             <li> <Link to={"/products"}>{t("header.products-link")}</Link></li>
                             <li> <Link to={"/contact"}>{t("header.contact-link")}</Link></li>
                             <li onClick={changeLang}>{language.toUpperCase()}</li>

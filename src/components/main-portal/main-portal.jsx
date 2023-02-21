@@ -64,20 +64,6 @@ const Hero = () => {
                 </motion.div>
             </div>
 
-
-            {/* Right Side */}
-            {/* <div className={css.h_sides}>
-                <div className={css.traffic}>
-                    <span>1.5m</span>
-                    <span>Monthly Traffic</span>
-                </div>
-
-                <div className={css.customers}>
-                    <span>1.5m</span>
-                    <span>Happy Customers</span>
-                </div>
-            </div> */}
-
         </div>
     )
 }

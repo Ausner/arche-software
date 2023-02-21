@@ -2,7 +2,15 @@ import css from "./products.module.css";
 import Header from "../header/header";
 import Footer from "../footer/footer";
 import { ProjectsData } from "../../data/projects";
-import {useTranslation} from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import Contact from "../contact/contact";
+import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from "swiper";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 
 const Products = () => {
     const [t, i18n] = useTranslation("global");
@@ -10,22 +18,29 @@ const Products = () => {
 
     return (
         <>
-            <div className="gradient">
-                <Header />
+            <Header />
+                <h3 style={{textAlign: 'center'}}><b>{t("products.title")}</b></h3>
                 <div className={css.container}>
-                     <h3><b>{t("products.title")}</b></h3>
-                     <br/>
-                     <div className={css.cards}>
+                    <br />
+                    <div className={css.cards}>
                         {ProjectsData.map((project, index) => (
-                            <div className={css.card}>
-                                <h4>{t(`products.${project.name}`)}</h4>
-                                <br/>
-                                <img src={project.img} alt="" width={100} height={100}/>
-                            </div>
+                            <Link to={`/contact/${project.name}`}>
+                                <div className={css.card}>
+                                    <h4>{t(`products.${project.name}`)}</h4>
+                                    <br />
+                                    <img src={project.img} alt="" width={100} height={100} />
+                                </div>
+                            </Link>
+
                         ))}
-                     </div>
+
+                    </div> 
+
+
+                    
                 </div>
-            </div>
+               
+
             <Footer />
         </>
 

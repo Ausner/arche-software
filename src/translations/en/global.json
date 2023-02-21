@@ -38,5 +38,25 @@
         "car-rental": "Car-Rental",
         "delivery-app": "Delivery App",
         "databases": "Databases"
+    },
+    "offer": {
+        "title": "Get Offer",
+        "description": "Let us know your email. We will send you the coupon code.",
+        "placeholder": "Your Email",
+        "button-text": "SEND"
+    },
+    "slider": {
+        "button-text": "Apply"
+    },
+    "testimonials": {
+        "title": "TOP RATED",
+        "subtitle-1": "WE ARE EVALUTED BY OUR CUSTOMERS",
+        "subtitle-2": "HAPPY CUSTOMERS WITH US",
+        "reviews": "Reviews"
+    },
+    "footer": {
+        "contact-us": "Contact US",
+        "location": "Location"
     }
+
 }

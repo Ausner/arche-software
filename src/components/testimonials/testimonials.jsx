@@ -2,17 +2,20 @@ import React from 'react'
 import css from "./testimonials.module.css";
 import Hero from "../../assets/hero1.png";
 import { TestimonialsData } from "../../data/testimonials";
-
+import {useTranslation} from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function Testimonials() {
+    const [t, i18n] = useTranslation("global");
+
+
   return (
     <div className={css.testimonials}>
         <div className={css.wrapper}>
             <div className={css.container}>
-                <span>Top Rated</span>
+                <span>{t("testimonials.title")}</span>
                 <span>
-                    We are evaluted by our customers
+                {t("testimonials.subtitle-1")}
                 </span>
             </div>
         
@@ -22,12 +25,12 @@ export default function Testimonials() {
             <div className={css.container}>
                 <span>100k</span>
                 <span>
-                    Happy Customers with us
+                {t("testimonials.subtitle-2")}
                 </span>
             </div>
         </div>
 
-        <div className={css.reviews}>Reviews</div>
+        <div className={css.reviews}>{t("testimonials.reviews")}</div>
 
         <div className={css.carousel}>
             <Swiper

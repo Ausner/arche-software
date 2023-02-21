@@ -67,6 +67,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home lang={language}/>} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/contact/:message" element={<Contact/>}/>
             <Route path="/products" element={<Products />} />
           </Routes>
           

@@ -7,9 +7,14 @@ import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {useTranslation} from 'react-i18next';
+import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 
 
 const Contact = () => {
+    const params = useParams();
+
+    console.log(params)
     const [t, i18n] = useTranslation("global");
 
     const notify = () => toast.success("Email sent!");
@@ -22,6 +27,7 @@ const Contact = () => {
   
 
     const handleInput = (e) => {
+        console.log(e)
         setFormData({...FormData, [e.target.name]: e.target.value});
     }
 
@@ -38,6 +44,64 @@ const Contact = () => {
         });
     
     }
+
+    useEffect(() => {
+
+        if (params.message) {
+            switch (params.message) {
+                case 'web-sites':
+                    if (i18n.language === 'es') {
+                        setFormData({...FormData, ['message']: 'Quiero realizar una página web. Me gustaría más información al respecto.'});
+                    } else {
+                        setFormData({...FormData, ['message']: 'I want to make a web page. I would like more information about it.'});
+                    }
+                    break;
+                case 'mobile-apps':
+                    if (i18n.language === 'es') {
+                        setFormData({...FormData, ['message']: 'Quiero realizar una aplicación móvil. Me gustaría más información al respecto.'});
+                    } else {
+                        setFormData({...FormData, ['message']: 'I want to make a mobile app. I would like more information about it.'});
+                    }
+                    break;
+                case 'custom-systems':
+                    if (i18n.language === 'es') {
+                        setFormData({...FormData, ['message']: 'Quiero realizar un sistema personalizado. Me gustaría más información al respecto.'});
+                    } else {
+                        setFormData({...FormData, ['message']: 'I want to make a custom system. I would like more information about it.'});
+                    }
+                    break;
+                case 'web-chat':
+                    if (i18n.language === 'es') {
+                        setFormData({...FormData, ['message']: 'Quiero realizar un chat web. Me gustaría más información al respecto.'});
+                    } else {
+                        setFormData({...FormData, ['message']: 'I want to make a web chat. I would like more information about it.'});
+                    }
+                    break;
+                case 'delivery-app':
+                    if (i18n.language === 'es') {
+                        setFormData({...FormData, ['message']: 'Quiero realizar una aplicación de entregas / Pedidos. Me gustaría más información al respecto.'});
+                    } else {
+                        setFormData({...FormData, ['message']: 'I want to make a delivery app. I would like more information about it.'});
+                    }
+                    break;
+                case 'car-rental':
+                    if (i18n.language === 'es') {
+                        setFormData({...FormData, ['message']: 'Quiero realizar una aplicación para renta de carros. Me gustaría más información al respecto.'});
+                    } else {
+                        setFormData({...FormData, ['message']: 'I want to make a car rental app. I would like more information about it.'});
+                    }
+                    break;                
+                case 'databases':
+                    if (i18n.language === 'es') {
+                        setFormData({...FormData, ['message']: 'Quiero realizar una base de datos. Me gustaría más información al respecto.'});
+                    } else {
+                        setFormData({...FormData, ['message']: 'I want to make a database. I would like more information about it.'});
+                    }
+                    break;
+            }
+        }
+    }, [params])
+
 
     return (
         <>

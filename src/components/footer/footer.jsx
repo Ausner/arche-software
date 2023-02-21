@@ -10,9 +10,11 @@ import {
     LinkIcon
 } from "@heroicons/react/outline"; //will be used in the future
 import css from "./footer.module.css";
+import {useTranslation} from 'react-i18next';
 
 
 export default function Footer() {
+    const [t, i18n] = useTranslation("global");
 
     const actualYear = new Date().getFullYear();
 
@@ -24,11 +26,25 @@ export default function Footer() {
                 <img src={ArcheLogo} alt=""/>
                 <span>Arche Software</span>
             </div>
-        
 
+        
             <div className={css.block}>
                 <div className={css.detail}>
-                    <span>Contact US</span>
+                    <span>{t("footer.contact-us")}</span>
+                    <span className={css.pngLine}>
+                        <PhoneIcon className={css.icon}/>
+                        <span>+506 8888 8888</span>
+                    </span>
+                    <span className={css.pngLine}>
+                        <InboxIcon className={css.icon}/>
+                        <span>archesoftarecompany</span>
+                    </span>
+                </div>
+            </div>
+           
+            <div className={css.block}>
+                <div className={css.detail}>
+                    <span>{t("location")}</span>
                     <span className={css.pngLine}>
                         <LocationMarkerIcon className={css.icon}/>
                         <span>San José, Costa Rica</span>
