@@ -53,8 +53,8 @@ export default function Footer() {
             </div>
         </div>
         <div className={css.copyRight}>
-                <span>Copyright ©{ actualYear } by Arche Software.</span>
-                <span>All rigths reserved.</span>
+                <span>Copyright ©{ actualYear } {t("footer.by")} Arche Software.</span>
+                <span>{t("footer.rigths-reserved")}</span>
         </div>
     </div>
   )

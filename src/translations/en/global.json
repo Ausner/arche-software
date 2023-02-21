@@ -56,7 +56,9 @@
     },
     "footer": {
         "contact-us": "Contact US",
-        "location": "Location"
+        "location": "Location",
+        "rigths-reserved": "All rigths reserved.",
+        "by": "by"
     }
 
 }
